@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appointment page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/fontawesomel.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="icon" href="/favicon/favicon.ico">
+
+</head>
+
+<body>
+    <!--  start navbar  
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">psychology smart
+                <i class="fa fa-home"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbardoctors">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbardoctors">
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home page.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advices.html">advices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="  navbar-brand" href="http://localhost:4000/Homepage">psychology smart
+        <i class="fa fa-home"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-pills ">
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4000/Homepage/doctors">specialists</a>
+          </li>
+          
+        </ul> 
+    </div>
+    </div>
+  </nav>
+    <!-- end navbar -->
+
+    <!-- start appointment form -->
+    <div class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 appoint-image wow animate__animated animate__fadeIn animate__slower">
+                    <img src="/img/appointment-image.jpg" alt="doxtor" />
+                </div>
+                <div class="wow animate__animated animate__fadeIn animate__slower col-md-6" data-wow-delay ="0.5s" >
+                    <form action="/Homepage/doctors/appointment" class="appoint-form" method="POST" role="form">
+                        <div class="form-title">
+                            <h2 class="text-center">make an appointment</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-c" id="name" name="name" placeholder="Full Name" />
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-c" id="email" name="email" placeholder="Your Email" />
+                            </div>
+
+                            <div class="col-sm-6 appoint-date">
+                                <label for="date">Select Date</label>
+                                <input type="date" class="form-c" name="date" value="" />
+                            </div>
+
+                            <div class="col-sm-6 appoint-department">
+                                <label for="select">Select Department</label>
+                                <select class="form-c" name="option">
+                                    <option name="option">General Health</option>
+                                    <option name="option">Family counseling</option>
+                                    <option name="option">Psychological counseling</option>
+                                    <option name="option">Medical Research</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label for="telephone">Phone Number</label>
+                                <input type="tel" class="form-c" id="phone" name="phone" placeholder="Phone" />
+                                <label for="Message">Additional Message</label>
+                                <textarea class="form-c" rows="5" id="message" name="message"
+                                    placeholder="Message"></textarea>
+                                <button type="submit" class="btn btn-primary btn-lg">submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end appointment form -->
+
+    <!-- start footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <span class="copyright">copyright &copy; ahmed hamada elsaid & supervisor:Dr.Basama</span>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    
+
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/wowmain.js"></script>
+</body>
+
+</html>

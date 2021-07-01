@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctors-page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesomel.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="icon" href="/favicon/favicon.ico">
+
+
+</head>
+<body>
+<!-- start navabr -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="http://localhost:7000/admin">PSYCHOLOGY SMART ADMIN PAGE 
+
+                <i class="fa fa-home"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+              <ul class="navbar-nav nav-pills ">
+                <li class="nav-item">
+                  <a class="nav-link"  href="http://localhost:7000/admin">admin page</a>
+                </li>
+                
+          </div>  
+        </div>
+    </nav>
+<!-- end navabr -->
+
+<!-- start d-slider -->
+
+<!-- end d-slider -->
+
+
+<!-- start doctors form -->
+<div class="doctors text-center">
+    <div class="container">
+        <!-- <h2 class=" text-primary">حجز مقابلة مع افضل الاطباء المتخصصين</h2> -->
+        <div class="row">
+            <% appointment.forEach(appointment =>{%>
+
+            <div class="col d-form wow animate__animated animate__fadeIn animate__slow" >
+                <div class="card bg-dark" style="width: 400px; ">
+                    <!-- <img src="img/doctor11.jpg" height="400px"  class="card-img-top" alt="doctor"> -->
+                    <div class="card-body">
+                      <h3 class="card-title">patient name : <%=appointment.name%> </h3>
+                      <h5>date : <%=appointment.date%></h5>
+                      <h5>department : <%=appointment.option%></h5>
+                      <h5>phone : <%=appointment.phone%></h5>
+                      <h5>message : <%=appointment.message%></h5>
+                      <h5></h5>
+
+                      <!-- <hr> -->
+                      <!-- <div class="card-text"> -->
+                       <!-- <a><i class="fab fa-facebook-f fa-lg"></i></a>  -->
+                        <!-- <a><i class="fab fa-twitter fa-lg"></i></a> -->
+                        <!-- <a><i class="fab fa-google-plus-g fa-lg"></i></a> -->
+                      <!-- </div> -->
+                      <form action="/admin/deletepatientreservation" method="POST">
+                        <button type="submit"  class="btn btn-danger">ازاله</button>
+                        <input type="hidden" name="id" value="<%=appointment.dr_id%>">
+                      </form>
+                    </div>
+                  </div>      
+            </div>
+            <%})%>
+        </div>
+    </div>
+</div>
+<!-- end doctors form -->
+
+
+<!-- start scroll to top button -->
+
+<div class="scrollTop">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<!-- end scroll button -->
+
+
+<!-- start footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <span class="copyright">copyright &copy; our team  & supervisor:Dr.Basama</span>
+  </div>
+
+  </footer>
+<!-- end footer -->
+
+
+
+
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/wowmain.js"></script>
+</body>
+</html>

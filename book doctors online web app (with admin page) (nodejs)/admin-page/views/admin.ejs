@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesomel.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="icon" href="/favicon/favicon.ico">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md  navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="  navbar-brand" href="http://localhost:7000/admin">psychology smart admin page
+        <i class="fa fa-home"></i>
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" > -->
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      <!-- </button> -->
+      <!-- <div class=" collapse navbar-collapse justify-content-end" id="navbarNavDropdown"> -->
+        <!-- <ul class="navbar-nav nav-pills "> -->
+          <li class="nav-item  ">
+            <!-- <a class="nav-link active"  href="http://localhost:7000/admin/adddoctor">add doctors</a> -->
+          <!-- </li> -->
+        
+          
+    </div>
+
+      
+    </div>
+  </nav>
+    <!-- <a href="http://localhost:7000/admin/adddoctors" class="btn btn-primary">add doctor</a> -->
+   
+      <!-- <a class="nav-link active"  href="http://localhost:7000/admin/adddoctor">add doctors</a> -->
+      <a class="btn btn-primary" href="http://localhost:7000/admin/adddoctor" role="button" style="margin-top: 100px; margin-left: 10px;">add doctors</a>
+
+    <div class="doctors text-center">
+        <div class="container">
+            <div class="row">
+              <% doctors.forEach(doctors =>{%>
+                <!-- <form action="/admin/delete"></form> -->
+                <div class="col d-form wow animate__animated animate__fadeIn animate__slow" data-wow-delay ="0.8s">
+                    <div class="card bg-dark" style="width: 400px; ">
+                        <img src="/img/doctor11.jpg" height="400px"  class="card-img-top" alt="doctor">
+                        <div class="card-body">
+                          <h3 class="card-title"><%=doctors.name%> </h3>
+                          <h5><%=doctors.role%></h5>
+                          <hr>
+                          <div class="card-text">
+                           <a><i class="fab fa-facebook-f fa-lg"></i></a> 
+                            <a><i class="fab fa-twitter fa-lg"></i></a>
+                            <a><i class="fab fa-google-plus-g fa-lg"></i></a>
+                          </div>
+                          <form action="/admin/deletedoctor" method="POST">
+                          <button type="submit"  class="btn btn-danger">ازاله</button>
+                          <input type="hidden" name="id" value="<%=doctors.id%>" />
+
+                          </form>
+                          
+                          <a href="http://localhost:7000/admin/doctorreservation/<%=doctors.id%>" class="btn btn-primary">بيانات المرضي</a>
+                        <!-- </form> -->
+                        </div>
+
+                      </div>
+                          
+                </div>
+              <%})%>
+            </div>
+        </div>
+    </div>
+
+
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/wow.min.js"></script>
+  <script src="/js/wowmain.js"></script>
+    
+</body>
+</html>

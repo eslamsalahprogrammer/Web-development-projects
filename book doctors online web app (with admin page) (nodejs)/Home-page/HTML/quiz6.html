@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>مقياس الثقة بالنفس</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/style2.css">
+		<script src="/js/sweetalert.min.js"></script>
+		<script src="/js/script6.js"></script>
+		<link rel="icon" href="/favicon/favicon.ico">
+
+	</head>
+	<body>
+		<div class="container text-center quiz-app">
+			<header>
+				<h1>مقياس الثقه بالنفس</h1>
+        <p>هذا الاختبار مخصص لقياس درجة الثقه بالنفس لديك. برجاء قراءة جمل الاختبار واختيار الإجابة الأنسب لك خلال الأسبوعين الماضيين</p>
+
+			</header>
+			<section>
+				<div id="results"></div>
+				<form name="quizForm" onsubmit="return submitAnswers()">
+					<h3>هل من الممكن أن تشارك في برنامج مسابقات تلفزيوني؟</h3>
+					<input type="radio" name="q1" value="a" id="q1a"> نعم<br>
+					<input type="radio" name="q1" value="b" id="q1b"> لا<br>
+
+					<h3> هل من الممكن أن تطير بطائرة صغيرة تسع شخصا واحدا؟</h3>
+					<input type="radio" name="q2" value="a" id="q2a"> نعم<br>
+					<input type="radio" name="q2" value="b" id="q2b"> لا<br>
+					
+
+					<h3>هل من الممكن أن تسير بين القبور ليلا؟</h3>
+					<input type="radio" name="q3" value="a" id="q3a"> نعم<br>
+					<input type="radio" name="q3" value="b" id="q3b"> لا<br>
+					
+
+					<h3>هل تود أن تكون رجل سياسة؟</h3>
+					<input type="radio" name="q4" value="a" id="q4a"> نعم <br>
+					<input type="radio" name="q4" value="b" id="q4b"> لا<br>
+                 
+
+					<h3>هل من الممكن أن تمسك لصا؟</h3>
+					<input type="radio" name="q5" value="a" id="q5a"> نعم<br>
+					<input type="radio" name="q5" value="b" id="q5b"> لا<br>
+
+					<h3>هل حدث و أن جادلت شخص أعلى منك مركزا؟</h3>
+					<input type="radio" name="q6" value="a" id="q6a"> نعم<br>
+					<input type="radio" name="q6" value="b" id="q6b"> لا<br>
+
+					<h3>هل تؤمن بأن "الهجوم خير وسيلة للدفاع"؟</h3>
+					<input type="radio" name="q7" value="a" id="q7a"> نعم<br>
+					<input type="radio" name="q7" value="b" id="q7b"> لا<br>
+
+					<h3> هل تعبر الطريق بثقة؟</h3>
+					<input type="radio" name="q8" value="a" id="q8a"> نعم<br>
+					<input type="radio" name="q8" value="b" id="q8b"> لا<br>
+
+			
+					<input type="submit" class="btn btn-lg btn-primary" value="نتيجتك">
+				</form>
+			</section>
+			
+		</div>
+	</body>	
+</html>

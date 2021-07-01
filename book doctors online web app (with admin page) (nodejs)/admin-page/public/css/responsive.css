@@ -1,0 +1,335 @@
+ /************************************   start home page  ********************************************/
+
+/*******************    mobile responscive   *********************/
+@media (max-width: 700px) {
+
+    /* start navbar */
+ 
+    .navbar .navbar-brand{
+        font-size: 17px;
+    }
+
+    /* end navbar */
+
+
+
+    /* start slider */
+
+    .slider .carousel-inner .carousel-caption h3{
+        font-size: 55px;
+    }
+
+
+    /* end slider */
+
+    /* start abput us */
+
+    .about-us .info{
+        padding-top: 20px;
+    }
+   
+    .about-us .info h2{
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+    .about-us .info h3{
+        font-size: 25px;
+    }
+    .about-us .info p{
+        font-size: 20px;
+    }
+
+    .about-us  img{
+        height: 450px;
+    }
+
+    /* end about-us */
+
+
+    /* start features */
+
+    .features h2{
+        font-size: 35px;
+        padding-bottom: 0;
+    }
+
+    .features .feat a{
+        font-size: 12px;
+    }
+
+    .features .feat a i{
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .features .feat a p{
+        margin-bottom: 5px;
+    }
+
+    /* end features  */
+
+
+    /* start testim */
+
+    .testim{
+        height: 520px;
+    }
+
+    .testim h2{
+        margin-top: 42px;
+        margin-bottom: 41px;
+        font-size: 34px;
+    }
+
+    .testim p,
+    .testim h3{
+        font-size: 20px;
+    }
+
+    .testim p{
+        line-height: 1.5;
+    }
+
+    /* end testim */
+
+    /* start quizes */
+
+    .quizes h2{
+        font-size: 32px;
+        padding-top: 15px;
+    }
+
+    /* end quizes */
+
+
+    /* start team */
+
+    .our-team{
+         height: 2020px;;
+    }
+
+    /* end team */
+
+    /* start contact us */
+
+    .contact{
+        height: 590px;
+    }
+
+    .contact h2{
+        font-size: 45px;
+    }
+
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form textarea{
+        float: none;
+        display: block;
+        width: 65%;
+        margin-bottom: 20px;
+    }
+
+    .contact form .info-form button{
+        display: block;
+        float: none;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .contact form .info-form .form-icon{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .contact form .info-form .form-icon i{
+        text-align: center;
+    }
+    /* end contact us */
+
+}
+
+
+
+/**********************************************    start meduim responsive (max-width: 991px )    ***************************************/
+
+
+@media ( min-width: 701px) and ( max-width:991px ){
+
+    /* start slider */
+
+    .slider .carousel-inner .carousel-caption h3{
+        font-size: 75px;
+    }
+}
+
+@media  ( min-width:767px ) and ( max-width:992px ){
+
+    /* start quizes */
+
+    .quizes h2{
+        font-size: 40px;
+    }
+
+    .quizes .test{
+        width: 360px !important;
+    }
+
+    /* end quizes */
+
+       /* start features */
+
+       .features h2{
+        font-size: 35px;
+        padding-bottom: 0;
+    }
+
+    .features .feat a{
+        font-size: 12px;
+    }
+
+    .features .feat a i{
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .features .feat a p{
+        margin-bottom: 5px;
+    }
+
+    /* end features  */
+
+}
+
+@media (min-width : 991px) and (max-width : 1200px){
+
+      /* start slider */
+
+      .slider .carousel-inner .carousel-caption h3{
+        font-size: 83px;
+    }
+}
+
+
+
+
+@media (max-width : 767px){
+
+      /* start team */
+
+      .our-team{
+        height: 2020px;;
+   }
+
+   /* end team */
+
+     /* start contact us */
+
+     .contact{
+        height: 590px;
+    }
+
+    .contact h2{
+        font-size: 45px;
+    }
+
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form textarea{
+        float: none;
+        display: block;
+        width: 65%;
+        margin-bottom: 20px;
+    }
+
+    .contact form .info-form button{
+        display: block;
+        float: none;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .contact form .info-form .form-icon{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .contact form .info-form .form-icon i{
+        text-align: center;
+    }
+    /* end contact us */
+
+}
+
+  /***********************************************************************   end home page   ******************************************************/
+
+
+
+/*********************************************************************    start specialists page   *******************************************************/
+
+@media (max-width: 992px){
+
+     /* start navbar */
+ 
+     .navbar .navbar-brand{
+        font-size: 17px;
+    }
+
+    /* end navbar */
+
+    /* start slider */
+    .d-slider .d-overlay h2 {
+        font-size: 40px;
+    }
+    .d-slider {
+        height: 500px !important;
+    }
+
+    /* end-slider */
+
+    /* start doctors */
+    .doctors h2 {
+        font-size: 30px;
+    }
+
+    .doctors .card{
+        margin: 20px auto;
+    }
+}
+
+
+@media (min-width:991px) and (max-width:1200px){
+
+     /* start navbar */
+ 
+     .navbar .navbar-brand{
+        font-size: 20px;
+    }
+
+    /* end navbar */
+
+    /* start slider */
+    .d-slider .d-overlay h2 {
+        font-size: 50px;
+    }
+    /* end-slider */
+
+    /* start doctors */
+    .doctors h2 {
+        font-size: 40px;
+    }
+
+    .doctors .card{
+        margin: 20px auto;
+    }
+
+}
+
+@media (min-width:1200px){
+
+    .doctors .card{
+        margin: 20px auto;
+    }
+
+}
