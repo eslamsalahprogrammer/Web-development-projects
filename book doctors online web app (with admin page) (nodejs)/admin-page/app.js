@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 
 const methodOverrid = require('method-override')
@@ -22,4 +24,4 @@ app.use('/admin',adminRouter);
 
 
 
-app.listen(7000)
+app.listen(4000)

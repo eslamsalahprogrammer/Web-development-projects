@@ -8,7 +8,7 @@ mongoose.connect('mongodb://localhost:27017/doctor-appointment-reservation' , {
     useNewUrlParser:true , useUnifiedTopology:true
 }).then(()=>{
     console.log("connection to mongodb success")
-}).catch(()=>{console.log("can't connect tp mongo")});
+}).catch(()=>{console.log("can't connect to mongo")});
 
 
 const app = express();

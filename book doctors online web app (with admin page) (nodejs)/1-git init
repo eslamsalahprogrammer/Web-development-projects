@@ -1,0 +1,7 @@
+
+1-git init
+2-git add . (path)
+3-git commit -m "mess"
+4-git remote add origin url
+5-git push
+6-git pull 
